@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.plkvoice.Fragment.SendMessageFragment">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ImgView2"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:src="@drawable/attend" />
+
+
+    <TextView
+        android:id="@+id/Reporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/ImgView2"
+        android:text="Phone Number"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Message"
+        android:layout_below="@+id/Reporter"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Attended : "
+        android:layout_below="@+id/Report"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioB"
+        android:layout_below="@+id/Report"
+        android:layout_toEndOf="@+id/radio"
+        android:layout_toRightOf="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/yesRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/NoRadio"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/yesRadio"
+            android:layout_toRightOf="@+id/yesRadio"
+            android:text="No"
+            android:checked="true"
+            />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/llButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioB">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Previous"></Button>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Save"></Button>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+    <!-- android:src="@drawable/hashtag"-->

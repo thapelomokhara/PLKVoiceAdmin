@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plk2"
+    tools:context="com.example.plkvoice.Fragment.OptionsFragment">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#DCDCDC"
+        android:dividerHeight="1dp"
+        android:listSelector="#F4A460"/>
+
+</RelativeLayout>
+    <!-- android:src="@drawable/hashtag"-->

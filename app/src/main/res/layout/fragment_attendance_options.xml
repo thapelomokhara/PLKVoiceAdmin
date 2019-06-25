@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.plkvoice.Fragment.AttendanceFragment">
+
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:ems="500"
+        android:hint="Search using phone number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_toRightOf="@+id/Search"
+        android:text="Search"
+        android:textAllCaps="false" />
+
+    <ListView
+        android:id="@+id/lvOptions"
+        android:layout_width="match_parent"
+        android:layout_height="659dp"
+        android:layout_below="@+id/Search"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:scrollbars="none" /><![CDATA[
+
+
+    />
+
+
+]]>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

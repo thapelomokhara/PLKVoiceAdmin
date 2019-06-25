@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.plkvoice.Fragment.SendMessageFragment">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="550dp"
+        android:layout_height="210dp"
+        android:id="@+id/ImgView2"
+        android:src="@drawable/report"/>
+
+
+    <TextView
+        android:id="@+id/CvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/ImgView2"
+        android:text="Phone Number"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CvNum"
+        android:hint="Enter Your Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/CvReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Report"
+        android:layout_below="@+id/Num"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CvReport"
+        android:hint="Write Your Report here"
+        android:inputType="textMultiLine"
+        android:longClickable="false" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/llButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Report">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Previous"></Button>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Send Report"></Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    <!-- android:src="@drawable/hashtag"-->

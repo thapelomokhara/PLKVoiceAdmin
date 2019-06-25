@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PLK Voice</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+</resources>
