@@ -24,6 +24,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+
         return countryList.length;
     }
 
